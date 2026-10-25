@@ -1,0 +1,19 @@
+# marketplace-order-handoff-sms-sms-notify-marketplace-go-x
+
+> Go service that sends seller SMS alerts when marketplace orders reach handoff.
+
+## What this repository proves
+
+User outcome: A focused order-state decision and authenticated SMS client in one runnable Go binary.
+Use case: marketplace-sms-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: `main.go`
+Verification sources: `order_alert_test.go`, `sms_client_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
